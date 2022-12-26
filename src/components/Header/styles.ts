@@ -29,6 +29,6 @@ export const NewTransactionButton = tw.button`
   rounded-[5px]
   cursor-pointer
   hover:bg-green-700
-  hover:duration-500
+  duration-500
   hover:transition-colors
 `;
