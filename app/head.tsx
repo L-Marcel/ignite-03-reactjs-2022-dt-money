@@ -1,7 +1,7 @@
 export default function AppHead() {
   return (
     <>
-      <title>App</title>
+      <title>Dt Money</title>
     </>
   );
 }

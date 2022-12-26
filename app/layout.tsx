@@ -1,21 +1,23 @@
 import { ReactNode } from "react";
-import { AppBody } from "../src/layout/styles";
 import "../src/styles/main.scss";
-import { Inter } from "@next/font/google";
+import { Roboto } from "@next/font/google";
+import { Header } from "../src/components/Header";
 
-const inter = Inter({ 
+const roboto = Roboto({
+  weight: ["100", "700"],
   subsets: ["latin"],
-  variable: "--inter-font"
+  variable: "--roboto-font"
 });
 
 export default function AppLayout({ children }: {
   children: ReactNode
 }) {
   return (
-    <html className={inter.variable} lang="en">
-      <AppBody>
+    <html className={roboto.variable} lang="en">
+      <body>
+        <Header/>
         {children}
-      </AppBody>
+      </body>
     </html>
   );
 }

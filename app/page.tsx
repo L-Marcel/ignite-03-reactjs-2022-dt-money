@@ -1,5 +1,9 @@
-export default function HomePage() {
+import { TransactionsPageContainer } from "../src/styles/pages/TransactionsStyles";
+
+export default function TransactionsPage() {
   return (
-    <h1 className="font-inter text-3xl">Hello world!</h1>
+    <TransactionsPageContainer>
+
+    </TransactionsPageContainer>
   );
 }
