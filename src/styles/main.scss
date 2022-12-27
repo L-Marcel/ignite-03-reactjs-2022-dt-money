@@ -70,8 +70,10 @@
         mt-6
         cursor-pointer
         duration-200
-        hover:bg-green-700
-        hover:transition-colors;
+        [&:not(:disabled)]:hover:bg-green-700
+        [&:not(:disabled)]:hover:transition-colors
+        disabled:cursor-not-allowed
+        disabled:opacity-60;
     }
 
     .outcome-button{
@@ -130,5 +132,31 @@
         }
       }
     }
+  }
+
+
+  @keyframes indeterminate-progress {
+    0% {
+      @apply
+        w-1/6
+        translate-x-0
+        bg-green-500;
+    }
+    50% {
+      @apply
+        w-1/4
+        translate-x-[150%]
+        bg-green-400;
+    }
+    100% {
+      @apply
+        w-1/6
+        translate-x-[500%]
+        bg-green-500;
+    }
+  }
+
+  .animate-indeterminate {
+    animation: indeterminate-progress 1s linear 0s infinite alternate;
   }
 }

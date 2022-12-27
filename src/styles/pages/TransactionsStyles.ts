@@ -24,5 +24,6 @@ interface PriceHighlightProps {
 }
 
 export const PriceHighlight = tw.span<PriceHighlightProps>`
-  ${props => props?.$variant === "outcome"? "text-red-300":"text-green-300"}
+  whitespace-nowrap
+  ${props =>props.$variant === "outcome"? "text-red-300":"text-green-300"}
 `;

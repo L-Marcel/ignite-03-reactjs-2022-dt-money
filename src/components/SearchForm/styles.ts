@@ -27,9 +27,11 @@ export const SearchFormButton = tw.button`
   text-green-300
   rounded-md
   font-bold
-  hover:bg-green-500
-  hover:border-green-500
-  hover:text-white
-  hover:transition-colors
+  [&:not(:disabled)]:hover:bg-green-500
+  [&:not(:disabled)]:hover:border-green-500
+  [&:not(:disabled)]:hover:text-white
+  [&:not(:disabled)]:hover:transition-colors
   duration-200
+  disabled:cursor-not-allowed
+  disabled:opacity-70
 `;

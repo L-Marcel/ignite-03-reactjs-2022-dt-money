@@ -1,7 +1,15 @@
+import { useSummaryValues } from "../../provider/hooks/useSummaryValues";
+import { PriceFormatters } from "../../utils/formatters";
 import { Icon } from "../Icon";
 import { SummaryCard, SummaryContainer, SummaryHeader, SummaryStrong } from "./styles";
 
 export function Summary() {
+  const { income, outcome, total } = useSummaryValues();
+
+  const formattedIncome = PriceFormatters.format(income);
+  const formattedOutcome = PriceFormatters.format(outcome);
+  const formattedTotal = PriceFormatters.format(total);
+
   return (
     <SummaryContainer>
       <SummaryCard>
@@ -13,7 +21,7 @@ export function Summary() {
             color="#00b37e"
           />
         </SummaryHeader>
-        <SummaryStrong>R$ 1.000,00</SummaryStrong>
+        <SummaryStrong>{formattedIncome}</SummaryStrong>
       </SummaryCard>
       <SummaryCard>
         <SummaryHeader>
@@ -24,7 +32,7 @@ export function Summary() {
             color="#f75a68"
           />
         </SummaryHeader>
-        <SummaryStrong>R$ 1.000,00</SummaryStrong>
+        <SummaryStrong>{formattedOutcome}</SummaryStrong>
       </SummaryCard>
       <SummaryCard $variant="green">
         <SummaryHeader>
@@ -35,7 +43,7 @@ export function Summary() {
             color="#fff"
           />
         </SummaryHeader>
-        <SummaryStrong>R$ 0,00</SummaryStrong>
+        <SummaryStrong>{formattedTotal}</SummaryStrong>
       </SummaryCard>
     </SummaryContainer>
   );
