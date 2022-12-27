@@ -1,5 +1,8 @@
 {
   "translatedDescription": "Um dos projetos da trilha de 2022 de React.js do Ignite",
+  "links": {
+    "figma": "https://www.figma.com/file/6rZSUU6YioGwpGNiTBVnSY/DT-Money-(Community)?node-id=42078%3A424&t=9gMj0NSn1fg4QlQI-1"
+  },
   "technologies": [
     "Next.js",
     "React.js",
