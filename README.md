@@ -28,7 +28,7 @@
       <li id="checked"><p>Realizar um deposito;</p></li>
       <li id="checked"><p>Realizar um saque;</p></li>
       <li id="checked"><p>Exibir o saldo total da conta;</p></li>
-      <li id="checked"><p>Exibir o quanto dinheiro entrou e saiu da conta.</p></li>
+      <li id="checked"><p>Exibir quanto dinheiro entrou e saiu da conta.</p></li>
     </ul>
   </div>
 </div>
