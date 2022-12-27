@@ -1,11 +1,13 @@
 "use client";
 
-import { ArrowCircleUp, ArrowCircleDown, CurrencyDollar, IconProps as PhosphorIconProps } from "phosphor-react";
+import { X, ArrowCircleUp, ArrowCircleDown, CurrencyDollar, MagnifyingGlass, IconProps as PhosphorIconProps } from "phosphor-react";
 
 export const icons = {
   ArrowCircleUp,
   ArrowCircleDown,
-  CurrencyDollar
+  CurrencyDollar,
+  MagnifyingGlass,
+  X
 };
 
 interface IconProps extends PhosphorIconProps {

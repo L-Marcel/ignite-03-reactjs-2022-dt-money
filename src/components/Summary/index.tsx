@@ -4,7 +4,7 @@ import { SummaryCard, SummaryContainer, SummaryHeader, SummaryStrong } from "./s
 export function Summary() {
   return (
     <SummaryContainer>
-      <SummaryCard $variant="default">
+      <SummaryCard>
         <SummaryHeader>
           <span>Entradas</span>
           <Icon
@@ -15,7 +15,7 @@ export function Summary() {
         </SummaryHeader>
         <SummaryStrong>R$ 1.000,00</SummaryStrong>
       </SummaryCard>
-      <SummaryCard $variant="default">
+      <SummaryCard>
         <SummaryHeader>
           <span>Saídas</span>
           <Icon

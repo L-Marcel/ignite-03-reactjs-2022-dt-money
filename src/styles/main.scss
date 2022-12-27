@@ -3,12 +3,18 @@
 @tailwind utilities;
 
 @layer base {
-  :focus {
+  *:focus, *:focus-visible {
     @apply
-      outline-0
-      shadow-green-500;
-    
-    box-shadow: 0 0 0 2px var(--tw-shadow);
+      outline-none
+      ring-green-500
+      ring-2
+      ring-offset-2
+      ring-offset-gray-800;
+
+    @apply
+      duration-75 #{!important};
+
+    -moz-appearance:none;
   }
 
   body {
@@ -23,5 +29,106 @@
       font-roboto
       text-base
       font-normal;
+  }
+}
+
+@layer components {
+  .transactions-table {
+    td {
+      @apply
+        px-8
+        py-5
+        bg-gray-700
+        first:rounded-tl-md
+        first:rounded-bl-md
+        last:rounded-tr-md
+        last:rounded-br-md;
+    }
+  }
+
+  .new-transaction-form {
+    input {
+      @apply
+        rounded-md
+        border-0
+        bg-gray-900
+        text-gray-300
+        p-4
+        placeholder:text-gray-500;
+    }
+
+    button[type="submit"] {
+      @apply
+        h-[58px]
+        border-0
+        bg-green-500
+        text-white
+        font-bold
+        py-0
+        px-5
+        rounded-md
+        mt-6
+        cursor-pointer
+        duration-200
+        hover:bg-green-700
+        hover:transition-colors;
+    }
+
+    .outcome-button{
+      svg {
+        @apply
+          text-red-300;
+      }
+
+      &:focus, &:focus-visible {
+        @apply
+          outline-none
+          ring-red-500
+          ring-2
+          ring-offset-2
+          ring-offset-gray-800;
+    
+        @apply
+          duration-75 #{!important};
+    
+        -moz-appearance:none;
+      }
+
+      &[data-state="checked"] {
+        @apply
+          text-white
+          bg-red-500;
+        
+        svg {
+          @apply
+            text-white;
+        }
+      }
+    }
+
+    .income-button {
+      svg {
+        @apply
+          text-green-300;
+      }
+
+      &[data-state="unchecked"] {
+        @apply
+          hover:transition-colors
+          hover:duration-200
+          hover:bg-gray-600;
+      }
+
+      &[data-state="checked"] {
+        @apply
+          text-white
+          bg-green-500;
+
+        svg {
+          @apply
+            text-white;
+        }
+      }
+    }
   }
 }

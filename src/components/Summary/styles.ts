@@ -14,11 +14,11 @@ export const SummaryContainer = tw.section`
 `;
 
 interface SummaryCardProps {
-  $variant: "default" | "green";
+  $variant?: "default" | "green";
 }
 
 export const SummaryCard = tw.article<SummaryCardProps>`
-  ${props => props.$variant === "green"? "bg-green-700":"bg-gray-600"}
+  ${props =>props.$variant === "green"? "bg-green-700":"bg-gray-600"}
   rounded-md
   p-8
 `;
