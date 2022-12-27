@@ -16,6 +16,7 @@ export const TransactionsTable = tw.table`
   border-spacing-x-0
   border-spacing-y-2
   mt-6
+  mb-8
   transactions-table
 `;
 
