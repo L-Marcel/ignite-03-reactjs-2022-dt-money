@@ -41,6 +41,10 @@ export function NewTransactionModal() {
   function handleOnOpen() {
     setIsOpen(true);
   }
+
+  function handleOnClose() {
+    setIsOpen(false);
+  }
   
   async function handleCreateNewTransaction(data: NewTransactionFormInputs) {
     await api.post("/transactions", { 
@@ -67,7 +71,7 @@ export function NewTransactionModal() {
         <ModalContent>
           <ModalTitle>Nova transação</ModalTitle>
           
-          <ModalCloseButton>
+          <ModalCloseButton onClick={handleOnClose}>
             <Icon name="X" size={24}/>
           </ModalCloseButton>
 

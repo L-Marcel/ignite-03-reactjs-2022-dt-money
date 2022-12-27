@@ -1,3 +1,5 @@
+"use client";
+
 import { createContext } from "use-context-selector";
 import { ReactNode, useCallback, useState } from "react";
 import { useQuery } from "react-query";
@@ -39,7 +41,7 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
   const { data, isFetching } = useQuery<Transaction[]>(["dtmoney@transactions", search], async() => {
     return getTransactions(search);
   }, {
-    staleTime: 1000 * 15
+    refetchInterval: 1000 * 15
   });
 
   const _setSearch = useCallback(setSearch, [setSearch]);

@@ -13,6 +13,8 @@ export const LoadingBarContainer = tw(Progress.Root)`
 export const LoadingBarIndicator = tw(Progress.Indicator)`
   min-h-full
   w-1/6
+  translate-x-0
+  absolute
   flex
   animate-indeterminate
 `;

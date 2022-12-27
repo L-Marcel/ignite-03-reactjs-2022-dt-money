@@ -21,7 +21,9 @@
     @apply
       bg-gray-800
       text-gray-100
-      antialiased;
+      antialiased
+      scrollbar-thin
+      scrollbar-thumb-green-500;
   }
 
   body, input, textarea, button {
@@ -135,28 +137,27 @@
   }
 
 
-  @keyframes indeterminate-progress {
+  @keyframes indeterminate {
     0% {
       @apply
-        w-1/6
-        translate-x-0
         bg-green-500;
+
+      transform: translateX(0%);
     }
-    50% {
-      @apply
-        w-1/4
-        translate-x-[150%]
-        bg-green-400;
-    }
+
     100% {
       @apply
-        w-1/6
-        translate-x-[500%]
         bg-green-500;
+        
+      transform: translateX(510%);
     }
   }
 
   .animate-indeterminate {
-    animation: indeterminate-progress 1s linear 0s infinite alternate;
+    @apply
+      w-1/6
+      transition-transform;
+
+    animation: indeterminate 1.5s linear 0s infinite alternate-reverse;
   }
 }
