@@ -1,12 +1,9 @@
 {
-  "name": "Template: Next Start",
-  "translatedDescription": "O template criado e usado por mim para iniciar meus projetos. Este modelo foi projetado para desenvolver aplicações com Next, Tailwind, Headless UI e Typescript. Seguindo a abordagem de estilização: CSS in JS.",
-  "pinned": true,
+  "translatedDescription": "Um dos projetos da trilha de 2022 de React.js do Ignite",
   "technologies": [
     "Next.js",
     "React.js",
     "Tailwind",
-    "Headless UI",
     "HTML",
     "CSS"
   ]
