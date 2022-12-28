@@ -18,7 +18,7 @@
 <div id="grid">
   <div id="grid-item">
     <h2>What did I <span>do</span>?</h2>
-    <p>Desenvolvi uma aplicação para gerenciar entrada e saída de dinheiro, que contém as seguintes funcionalidades:</p>
+    <p>I developed an application to manage incoming and outgoing money, which contains the following functionalities:</p>
     <ul>
       <li id="checked"><p>List of performed transactions;</p></li>
       <li id="checked"><p>Make a deposit;</p></li>
