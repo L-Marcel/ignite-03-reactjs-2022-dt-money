@@ -3,7 +3,7 @@
   <p>Um dos projetos da trilha de 2022 de React.js do Ignite</p>
   <nav>
     <div id="repository-buttons"/>
-    <a class="navigation-link disabled" href="https://github.com/L-Marcel/ignite-03-reactjs-2022-dt-money/blob/main/README.en-us.md" target="__blank__">
+    <a class="navigation-link disabled" href="https://github.com/L-Marcel/ignite-03-reactjs-2022-dt-money/blob/main/README.en-US.md" target="__blank__">
       en-us
     </a>
     <span class="disabled">•</span>
@@ -18,7 +18,7 @@
 <div id="grid">
   <div id="grid-item">
     <h2>O que <span>fiz</span>?</h2>
-    <p>Desenvolvi uma aplicação para gerenciar entrada e saída de dinheiro, que contém as seguintes funcionalidades:</p>
+    <p>Desenvolvi uma aplicação para gerenciar entrada e saída de dinheiro, a qual contém as seguintes funcionalidades:</p>
     <ul>
       <li id="checked"><p>Listagem de transações realizadas;</p></li>
       <li id="checked"><p>Realizar um deposito;</p></li>
