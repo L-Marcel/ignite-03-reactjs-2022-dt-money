@@ -7,10 +7,6 @@
       en-us
     </a>
     <span class="disabled">•</span>
-    <a class="navigation-link" href="https://ignite-03-reactjs-2022-dt-money.vercel.app/" target="__blank__">
-      demo
-    </a>
-    <span>•</span>
     <a class="navigation-link" href="https://www.figma.com/file/6rZSUU6YioGwpGNiTBVnSY/DT-Money-(Community)?node-id=42078%3A424&t=9gMj0NSn1fg4QlQI-1" target="__blank__">
       figma
     </a>
